@@ -32,7 +32,6 @@ class NativeDialog {
 		__init(callbackObject);
 		#elseif ios
 		__init(callbackObject._onShowMessageClose, callbackObject._onConfirmMessageOk, callbackObject._onConfirmMessageCancel, callbackObject._onPromptOk, callbackObject._onPromptCancel);
-		#end
 		#elseif blackberry
 		__init(callbackObject._onShowMessageClose, callbackObject._onConfirmMessageOk, callbackObject._onConfirmMessageCancel);
 		#end
